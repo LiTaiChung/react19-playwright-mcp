@@ -6,6 +6,7 @@ import tseslint from 'typescript-eslint';
 import prettier from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
+import unusedImports from 'eslint-plugin-unused-imports';
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -28,6 +29,7 @@ export default tseslint.config(
       'react-refresh': reactRefresh,
       prettier: prettier,
       'simple-import-sort': simpleImportSort,
+      'unused-imports': unusedImports,
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
@@ -41,6 +43,7 @@ export default tseslint.config(
         'error',
         { argsIgnorePattern: '^_' },
       ],
+      'unused-imports/no-unused-imports': 'error',
     },
   }
 );
