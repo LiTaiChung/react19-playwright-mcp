@@ -8,7 +8,7 @@ test.describe('Home Page E2E Tests', () => {
 
     // 捕捉頁面截圖以調查問題
     await page.screenshot({
-      path: 'test-results/home-page-screenshot.png',
+      path: 'playwright/screenshots/home-page-screenshot.png',
       fullPage: true,
     });
 

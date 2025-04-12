@@ -22,7 +22,13 @@ export default defineConfig({
 
   // 報告相關設定
   reporter: [
-    ['html', { open: 'never' }], // HTML 報告
+    [
+      'html',
+      {
+        open: 'never',
+        outputFolder: 'playwright/report',
+      },
+    ], // HTML 報告
     ['list'], // 命令列報告
   ],
 
@@ -40,7 +46,7 @@ export default defineConfig({
     baseURL: process.env.BASE_URL || 'http://localhost:5173',
 
     // 自動截圖設定
-    screenshot: 'only-on-failure',
+    screenshot: 'on',
 
     // 追蹤設定（用於偵錯）
     trace: 'retain-on-failure',
