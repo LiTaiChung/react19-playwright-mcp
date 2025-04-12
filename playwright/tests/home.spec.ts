@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import mockData from '../src/queries/mockData';
+import mockData from '../../src/queries/mockData';
 
 test.describe('Home Page E2E Tests', () => {
   test('首頁應顯示正確的標題與最新文章列表', async ({ page }) => {

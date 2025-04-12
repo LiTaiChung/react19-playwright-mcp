@@ -1,0 +1,8 @@
+Use the Playwright MCP Server to navigate to the website http://localhost:5173. Ensure that the MCP Server is actively handling the browser automation to validate its integration. Do not simulate the tests statically or bypass the MCP Server. All interactions must be routed through MCP.
+
+✅ After both scenarios are validated:
+
+Close the browser.
+Once the MCP server finished the code gen, use the code generated under temp_codegen and transpile it to Typescript React Framework using the code generated as reference.
+
+Once you have the code gen thru the MCP server, and use the code generated.

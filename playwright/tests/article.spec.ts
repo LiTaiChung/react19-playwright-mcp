@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-import mockData from '../src/queries/mockData';
+import mockData from '../../src/queries/mockData';
 
 test.describe('Article Page E2E Tests', () => {
   test('文章頁面應顯示正確的文章內容', async ({ page }) => {
